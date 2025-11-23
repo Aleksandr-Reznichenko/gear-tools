@@ -23,5 +23,51 @@
 
     <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header__container">
+        <!-- logotype -->
+        <a class="header__logo link" href="./index.html">
+          <img
+            src="./images/logo.png"
+            srcset="./images/logo@2x.png 2x"
+            alt="Gear Tools logo"
+            width="40" />
+        </a>
+
+        <!-- navigation -->
+        <nav class="header__nav" aria-label="Main navigation">
+          <ul class="header__list list">
+            <li class="header__item">
+              <a class="header__link link" href="./index.html">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="#">Popular</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="#">Newcomer</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="#">About</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- login -->
+        <a class="header__login link" href="#">Login</a>
+
+        <!-- burger menu -->
+        <button class="header__burger" type="button">
+          <svg
+            class="header__burger-icon"
+            width="25"
+            height="21"
+            aria-label="Burger menu icon">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+  </body>
 </html>

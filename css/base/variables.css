@@ -1,0 +1,17 @@
+:root {
+  /* ======= fonts ======= */
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+  --font-tertiary: 'Montserrat Alternates', sans-serif;
+
+  /* ======= colors ======= */
+  --color-bg-body: #ffffff;
+
+  --color-text-primary: #333e44;
+  --color-text-secondary: #475e69;
+  --color-text-light: #ffffff;
+
+  /* transition */
+  --duration: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

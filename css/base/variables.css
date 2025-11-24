@@ -6,10 +6,17 @@
 
   /* ======= colors ======= */
   --color-bg-body: #ffffff;
+  --color-bg-dark: #1f2e35;
+  --color-bg-light: #f9f9f9;
 
   --color-text-primary: #333e44;
   --color-text-secondary: #475e69;
   --color-text-light: #ffffff;
+
+  --color-accent: #0086d6;
+  --color-state-primary: #20c08b;
+
+  --color-dark-grey: #30444e;
 
   /* transition */
   --duration: 250ms;

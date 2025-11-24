@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+/* ======= mobile ======= */
+@media screen and (min-width: 411px) {
+  .container {
+    padding-inline: 32px;
+  }
+}
+
+/* ======= desktop ======= */
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-inline: 150px;
+  }
+}

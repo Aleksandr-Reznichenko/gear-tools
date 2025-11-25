@@ -9,3 +9,11 @@
   color: var(--color-text-light);
   background-color: var(--color-accent);
 }
+
+/* current page */
+
+a[aria-current='page'] {
+  color: var(--color-state-primary);
+  font-weight: 500;
+  cursor: default;
+}

@@ -1,13 +1,15 @@
+@media screen and (max-width: 767px) {
+  .header__nav,
+  .header__login {
+    display: none;
+  }
+}
+
 /* ======= MOBILE ======= */
 
 .header {
   padding-block: 13px;
   background-color: var(--color-bg-dark);
-}
-
-.header__nav,
-.header__login {
-  display: none;
 }
 
 .header__container {
@@ -34,7 +36,8 @@
     display: block;
   }
 
-  .header__burger {
+  .header__burger,
+  .menu {
     display: none;
   }
 
@@ -49,11 +52,6 @@
     line-height: 1.77;
     text-transform: uppercase;
     color: var(--color-text-light);
-  }
-
-  .header__link--current {
-    font-weight: 500;
-    color: var(--color-state-primary);
   }
 }
 

@@ -28,7 +28,7 @@
     <header class="header">
       <div class="container header__container">
         <!-- logotype -->
-        <a class="header__logo link" href="./index.html">
+        <a class="header__logo link" href="./">
           <img
             src="./images/logo.png"
             srcset="./images/logo@2x.png 2x"
@@ -40,21 +40,16 @@
         <nav class="header__nav" aria-label="Main navigation">
           <ul class="header__list list">
             <li class="header__item">
-              <a
-                class="header__link header__link--current link"
-                href="./index.html"
-                aria-current="page">
-                Home
-              </a>
+              <a class="header__link link" href="./index.html">Home</a>
             </li>
             <li class="header__item">
-              <a class="header__link link" href="#">Popular</a>
+              <a class="header__link link" href="./popular.html">Popular</a>
             </li>
             <li class="header__item">
-              <a class="header__link link" href="#">Newcomer</a>
+              <a class="header__link link" href="./newcomer.html">Newcomer</a>
             </li>
             <li class="header__item">
-              <a class="header__link link" href="#">About</a>
+              <a class="header__link link" href="./about.html">About</a>
             </li>
           </ul>
         </nav>
@@ -64,7 +59,7 @@
 
         <!-- burger menu -->
         <button
-          class="header__burger"
+          class="header__burger js-open-menu"
           type="button"
           aria-label="Open main navigation">
           <svg
@@ -77,5 +72,62 @@
         </button>
       </div>
     </header>
+
+    <!-- MOBILE MENU -->
+    <div class="menu js-menu-container" id="mobile-menu">
+      <div class="container menu__container">
+        <!-- header menu -->
+        <div class="menu__header">
+          <!-- logotype -->
+          <a class="menu__logo link" href="./index.html">
+            <img
+              src="./images/logo.png"
+              srcset="./images/logo@2x.png 2x"
+              alt="Gear Tools logo"
+              width="40" />
+          </a>
+
+          <!-- close button -->
+          <button
+            class="menu__close js-close-menu"
+            type="button"
+            aria-label="Close main navigation">
+            <svg
+              class="menu__close-icon"
+              width="20"
+              height="20"
+              aria-hidden="false">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <!-- main content -->
+        <div class="menu__main">
+          <!-- navigation -->
+          <nav class="menu__nav" aria-label="Main navigation">
+            <ul class="menu__list list">
+              <li class="menu__item">
+                <a class="menu__link link" href="./index.html">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="./popular.html">Popular</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="./newcomer.html">Newcomer</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="./about.html">About</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- login -->
+          <a class="login menu__login link" href="#">Login</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/current-page.js"></script>
   </body>
 </html>

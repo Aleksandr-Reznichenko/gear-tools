@@ -1,0 +1,231 @@
+/* ======= MOBILE & TABLET ======= */
+
+.hero {
+  padding-top: 60px;
+  padding-bottom: 46px;
+  background-color: var(--color-bg-dark);
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* BRANDS */
+
+.hero__brands {
+  margin-bottom: 60px;
+  width: clamp(315px, calc(262.277px + 12.828vw), 447px);
+  border-radius: 50%;
+}
+
+.hero__circle-brands {
+  position: relative;
+}
+
+/* Gear logo */
+.hero__gear {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(100px, calc(83.224px + 4.082vw), 142px);
+}
+
+/* Figma brand */
+.hero__figma {
+  position: absolute;
+  top: -11%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero__figma-icon {
+  width: clamp(30px, calc(24.408px + 1.361vw), 44px);
+}
+
+/* InVision brand */
+.hero__invision {
+  position: absolute;
+  top: 13%;
+  right: -4%;
+}
+.hero__invision-icon {
+  width: clamp(44px, calc(36.81px + 1.749vw), 62px);
+}
+
+/* Github brand */
+.hero__github {
+  position: absolute;
+  bottom: 13%;
+  right: -4%;
+}
+.hero__github-icon {
+  width: clamp(44px, calc(36.81px + 1.749vw), 62px);
+}
+
+/* Adobe XD brand */
+.hero__adobe {
+  position: absolute;
+  bottom: -11%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero__adobe-icon {
+  width: clamp(30px, calc(24.408px + 1.361vw), 44px);
+}
+
+/* VS Code brand */
+.hero__vscode {
+  position: absolute;
+  bottom: 13%;
+  left: -4%;
+}
+.hero__vscode-icon {
+  width: clamp(37px, calc(31.009px + 1.458vw), 52px);
+}
+
+/* PyCharm brand */
+.hero__pycharm {
+  position: absolute;
+  top: 13%;
+  left: -4%;
+}
+.hero__pycharm-icon {
+  width: clamp(43px, calc(36.21px + 1.652vw), 60px);
+}
+
+/* CONTENT */
+
+.hero__content {
+  font-family: var(--font-primary);
+  max-width: 554px;
+  text-align: center;
+}
+
+.hero__title {
+  margin-bottom: 22px;
+  font-weight: 600;
+  font-size: clamp(32px, calc(28.805px + 0.777vw), 40px);
+  line-height: 1.62;
+  letter-spacing: 0.01em;
+  color: var(--color-text-light);
+}
+
+.hero__description {
+  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 2.02;
+  letter-spacing: 0.01em;
+  color: var(--color-text-light);
+}
+
+/* Explore Now link */
+
+.hero__link {
+  display: inline-block;
+  margin-bottom: 32px;
+  padding-inline: 28px;
+  border-radius: 8px;
+  background-color: var(--color-accent);
+  font-size: 20px;
+  line-height: 3.05;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: var(--color-text-light);
+}
+
+/* stats */
+
+.hero__stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.hero__list-avatars {
+  display: flex;
+}
+
+.hero__item {
+  width: 50px;
+  margin-left: -32px;
+}
+
+.hero__item:first-child {
+  margin-left: 0;
+}
+
+.hero__usage {
+  color: var(--color-text-light);
+}
+
+.hero__usage-number {
+  font-weight: 500;
+  color: var(--color-accent);
+}
+
+/* ======= LAPTOP ======= */
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 86px;
+    padding-bottom: 74px;
+  }
+
+  .hero__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: start;
+    column-gap: 46px;
+  }
+
+  /* BRANDS */
+
+  .hero__brands {
+    margin-bottom: 0;
+  }
+
+  /* CONTENT */
+
+  .hero__content {
+    text-align: left;
+  }
+
+  .hero__title {
+    margin-bottom: 16px;
+  }
+
+  .hero__description {
+    margin-bottom: 24px;
+  }
+
+  .hero__link {
+    margin-bottom: 50px;
+    transition: background-color var(--duration) var(--timing-function);
+  }
+
+  .hero__link:hover,
+  .hero__link:focus {
+    background-color: var(--color-state-secondary);
+  }
+
+  .hero__stats {
+    justify-content: left;
+  }
+}
+
+/* ======= DESKTOP ======= */
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 102px;
+  }
+
+  .hero__container {
+    column-gap: 112px;
+  }
+}

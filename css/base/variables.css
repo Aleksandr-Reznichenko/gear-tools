@@ -7,6 +7,7 @@
   /* ======= colors ======= */
   --color-bg-body: #ffffff;
   --color-bg-dark: #1f2e35;
+  --color-bg-dark-gray: #333f44;
   --color-bg-light: #f9f9f9;
 
   --color-text-primary: #333e44;
@@ -15,6 +16,7 @@
 
   --color-accent: #0086d6;
   --color-state-primary: #20c08b;
+  --color-state-secondary: #0075b9;
 
   --color-dark-grey: #30444e;
 

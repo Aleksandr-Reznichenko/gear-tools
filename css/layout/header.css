@@ -85,7 +85,6 @@
   .header__login:hover,
   .header__login:focus {
     box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
-    background-color: var(--color-dark-grey);
-    color: var(--color-state-primary);
+    background-color: var(--color-state-secondary);
   }
 }

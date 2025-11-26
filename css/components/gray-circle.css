@@ -1,0 +1,12 @@
+/* dark gray circle for brand logos */
+
+.gray-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(73px, calc(61.017px + 2.915vw), 103px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--color-bg-dark-gray);
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
+}

@@ -17,11 +17,17 @@
 .hero__brands {
   margin-bottom: 60px;
   width: clamp(315px, calc(262.277px + 12.828vw), 447px);
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
 }
 
 .hero__circle-brands {
   position: relative;
+  max-width: 447px;
+}
+
+.hero__circle-icon {
+  width: clamp(315px, calc(262.277px + 12.828vw), 447px);
 }
 
 /* Gear logo */
@@ -148,12 +154,12 @@
   display: flex;
 }
 
-.hero__item {
+.hero__avatar {
   width: 50px;
   margin-left: -32px;
 }
 
-.hero__item:first-child {
+.hero__avatar:first-child {
   margin-left: 0;
 }
 

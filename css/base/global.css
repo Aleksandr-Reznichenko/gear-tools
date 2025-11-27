@@ -42,3 +42,20 @@ button {
 .list {
   list-style-type: none;
 }
+
+.title {
+  font-family: var(--font-prymary);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 0.88;
+  letter-spacing: 0.01em;
+  color: var(--color-text-primary);
+}
+
+.subtitle {
+  font-family: var(--font-prymary);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}

@@ -8,6 +8,7 @@
 /* ======= layout ======= */
 @import './layout/header.css';
 @import './layout/hero.css';
+@import './layout/tools-overview.css';
 
 @import './layout/mobile-menu.css';
 

@@ -1,0 +1,87 @@
+/* ======= MOBILE ======= */
+
+.tools-stats {
+  margin-bottom: 70px;
+  font-family: var(--font-primary);
+}
+
+.tools-stats__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+}
+
+.tools-stats__item {
+  padding-block: 24px 22px;
+  max-width: 262px;
+  text-align: center;
+}
+
+.tools-stats__number {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+.tools-stats__item:nth-child(1) .tools-stats__number {
+  color: var(--color-accent);
+}
+.tools-stats__item:nth-child(2) .tools-stats__number {
+  color: var(--color-light-green);
+}
+.tools-stats__item:nth-child(3) .tools-stats__number {
+  color: var(--color-light-red);
+}
+
+.tools-stats__subtitle {
+  margin-bottom: 16px;
+}
+
+.tools-stats__description {
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+}
+
+/* ======= TABLET ======= */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tools-stats__list {
+    flex-direction: row;
+    gap: 0 24px;
+    justify-content: space-between;
+  }
+
+  .tools-stats__number {
+    font-size: 24px;
+  }
+
+  .tools-stats__subtitle {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .tools-stats__description {
+    font-size: 14px;
+  }
+}
+
+/* ======= LAPTOP ======= */
+
+@media screen and (min-width: 1200px) {
+  .tools-stats__list {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 80px;
+  }
+}
+
+/* ======= DESKTOP ======= */
+
+@media screen and (min-width: 1440px) {
+  .tools-stats__list {
+    column-gap: 128px;
+  }
+}

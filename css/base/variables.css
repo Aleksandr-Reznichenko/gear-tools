@@ -18,7 +18,13 @@
   --color-state-primary: #20c08b;
   --color-state-secondary: #0075b9;
 
+  --color-pricing-plan-free: #20c08b;
+  --color-pricing-plan-premium: #ffc942;
+  --color-pricing-plan-one-month: #009bff;
+
   --color-dark-grey: #30444e;
+  --color-light-green: #2fd886;
+  --color-light-red: #f36;
 
   /* transition */
   --duration: 250ms;

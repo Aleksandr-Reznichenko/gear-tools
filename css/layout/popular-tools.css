@@ -1,0 +1,79 @@
+.popular {
+  padding-block: 50px 30px;
+  font-family: var(--font-primary);
+}
+
+.popular__title {
+  margin-bottom: 16px;
+  font-size: 34px;
+  text-align: center;
+}
+
+.popular__description {
+  margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+/* list of popular tools cards */
+
+.popular__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
+  margin-bottom: 50px;
+}
+
+.popular__card {
+  border-radius: 8px;
+  max-width: 360px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: var(--color-bg-white);
+}
+
+.popular__card-link {
+  display: block;
+  padding: 20px;
+}
+
+/* card icon */
+
+.popular__card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  height: 187px;
+  border-radius: 5px;
+  background-color: var(--color-bg-card-icon);
+}
+
+/* card info */
+
+.popular__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.popular__text {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.popular__tags {
+  display: flex;
+  column-gap: 16px;
+}
+
+/* link to the page */
+
+.popular__page-link {
+  display: flex;
+  justify-content: center;
+}

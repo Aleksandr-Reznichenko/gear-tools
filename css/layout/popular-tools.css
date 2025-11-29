@@ -1,3 +1,10 @@
+/* hidden card for mobile and desktop */
+.popular__card--extra {
+  display: none;
+}
+
+/* ======= MOBILE ======= */
+
 .popular {
   padding-block: 50px 30px;
   font-family: var(--font-primary);
@@ -35,7 +42,9 @@
 }
 
 .popular__card-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 20px;
 }
 
@@ -52,6 +61,13 @@
 }
 
 /* card info */
+
+.popular__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
 
 .popular__head {
   display: flex;
@@ -73,7 +89,56 @@
 
 /* link to the page */
 
-.popular__page-link {
+.popular__page-wrapper {
   display: flex;
   justify-content: center;
+}
+
+/* ======= TABLET ======= */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .popular__card--extra {
+    display: block;
+  }
+
+  .popular__cards {
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+
+  .popular__card {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+/* ======= LAPTOP & DESKTOP ======= */
+
+@media screen and (min-width: 1200px) {
+  .popular__cards {
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 50px 30px;
+  }
+
+  .popular__card {
+    width: calc((100% - 60px) / 3);
+    transition: box-shadow 500ms var(--timing-function);
+  }
+
+  .popular__card:hover,
+  .popular__card:focus {
+    box-shadow: 0 32px 56px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  .popular__page-link {
+    transition: background-color var(--duration) var(--timing-function);
+  }
+
+  .popular__page-link:hover,
+  .popular__page-link:focus {
+    background-color: var(--color-dark-grey-button);
+  }
 }

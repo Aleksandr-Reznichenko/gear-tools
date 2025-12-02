@@ -85,3 +85,49 @@
   letter-spacing: 0.01em;
   color: var(--color-dark-gray);
 }
+
+/* ======= TABLET ======= */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .testimonials__list {
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+
+  .testimonials__item {
+    width: calc((100% - 20px) / 2);
+  }
+
+  .testimonials__item--extra {
+    display: none;
+  }
+}
+
+/* ======= LAPTOP ======= */
+
+@media screen and (min-width: 1200px) {
+  .testimonials__list {
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+
+  .testimonials__item {
+    width: calc((100% - 40px) / 3);
+  }
+}
+
+/* ======= DESKTOP ======= */
+
+@media screen and (min-width: 1200px) {
+  .testimonials__list {
+    column-gap: 32px;
+  }
+
+  .testimonials__item {
+    width: calc((100% - 64px) / 3);
+  }
+}

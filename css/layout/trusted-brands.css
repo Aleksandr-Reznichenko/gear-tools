@@ -46,7 +46,6 @@
 
 @media screen and (min-width: 768px) {
   .trusted__list {
-    display: flex;
     flex-direction: row;
     align-items: stretch;
     flex-wrap: wrap;
@@ -54,7 +53,7 @@
   }
 
   .trusted__item {
-    width: calc((100% - 40px) / 3);
+    width: calc((100% - 20px) / 2);
   }
 
   .trusted__icon {
@@ -63,8 +62,8 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .trusted__text {
-    font-size: 14px;
+  .trusted__item--extra {
+    display: none;
   }
 }
 

@@ -44,7 +44,7 @@
 }
 
 .testimonials__rating-icon {
-  fill: #ffc942;
+  fill: var(--color-star-rating);
 }
 
 /* message */
@@ -88,7 +88,7 @@
 
 /* ======= TABLET ======= */
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .testimonials__list {
     flex-direction: row;
     align-items: stretch;
@@ -99,7 +99,9 @@
   .testimonials__item {
     width: calc((100% - 20px) / 2);
   }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .testimonials__item--extra {
     display: none;
   }

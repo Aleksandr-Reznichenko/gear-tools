@@ -149,6 +149,6 @@
 
   .newcomer__page-link:hover,
   .newcomer__page-link:focus {
-    background-color: var(--color-dark-grey-button);
+    background-color: var(--color-dark-gray-button);
   }
 }

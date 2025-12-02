@@ -25,10 +25,12 @@
   --color--plan-premium: #ffc942;
   --color--plan-trial: #009bff;
 
-  --color-dark-grey: #30444e;
-  --color-dark-grey-button: #465861;
+  --color-dark-gray: #30444e;
+  --color-dark-gray-button: #465861;
   --color-light-green: #2fd886;
   --color-light-red: #f36;
+
+  --color-border-testimonials: #dedede;
 
   /* transition */
   --duration: 250ms;

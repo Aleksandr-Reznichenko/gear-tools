@@ -139,6 +139,6 @@
 
   .popular__page-link:hover,
   .popular__page-link:focus {
-    background-color: var(--color-dark-grey-button);
+    background-color: var(--color-dark-gray-button);
   }
 }

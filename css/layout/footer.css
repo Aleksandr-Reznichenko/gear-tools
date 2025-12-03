@@ -82,12 +82,30 @@
   color: var(--color-text-light);
 }
 
+/* Bottom footer */
+
+.footer__bottom {
+  padding-block: 16px;
+  background-color: var(--color-bg-footer-copyright);
+}
+
+.footer__copyright {
+  line-height: 1.87;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--color-text-light);
+}
+
 /* ======= TABLET ======= */
 
 @media screen and (min-width: 768px) {
+  /* Top footer */
+
   .footer__description {
     font-size: 18px;
   }
+
+  /* subscribe */
   .footer__form {
     flex-direction: row;
     align-items: stretch;

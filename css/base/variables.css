@@ -32,6 +32,8 @@
 
   --color-star-rating: #ffc942;
   --color-border-testimonials: #dedede;
+  --color-line-footer: #666666;
+  --color-placeholder-form: #737b7d;
 
   /* transition */
   --duration: 250ms;

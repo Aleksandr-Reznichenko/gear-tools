@@ -1,7 +1,6 @@
 /* ======= MOBILE ======= */
 
 .newcomer {
-  padding-block: 50px;
   font-family: var(--font-primary);
   background-color: var(--color-bg-light);
 }
@@ -143,12 +142,45 @@
     background-color: var(--color-bg-card-icon);
   }
 
+  /* link to the page */
+
   .newcomer__page-link {
-    transition: background-color var(--duration) var(--timing-function);
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+
+    min-width: 160px;
+    text-align: center;
+    transition: all var(--duration) var(--timing-function);
+  }
+
+  .newcomer__page-link::before {
+    content: '\27F6';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+
+    right: 0;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 40px;
+
+    transition: all var(--duration) linear;
+    transform: translateX(100%);
   }
 
   .newcomer__page-link:hover,
   .newcomer__page-link:focus {
-    background-color: var(--color-dark-gray-button);
+    text-indent: -20px;
+    white-space: nowrap;
+  }
+
+  .newcomer__page-link:hover::before,
+  .newcomer__page-link:focus::before {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

@@ -9,6 +9,7 @@
 
 .header {
   padding-block: 13px;
+  font-family: var(--font-primary);
   background-color: var(--color-bg-dark);
 }
 

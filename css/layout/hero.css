@@ -3,7 +3,7 @@
 .hero {
   padding-top: 60px;
   padding-bottom: 46px;
-  margin-bottom: 70px;
+  font-family: var(--font-primary);
   background-color: var(--color-bg-dark);
 }
 
@@ -105,7 +105,6 @@
 /* CONTENT */
 
 .hero__content {
-  font-family: var(--font-primary);
   max-width: 554px;
   text-align: center;
 }

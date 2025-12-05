@@ -1,9 +1,5 @@
 /* ======= MOBILE ======= */
 
-.tools-stats {
-  font-family: var(--font-primary);
-}
-
 .tools-stats__list {
   display: flex;
   flex-direction: column;

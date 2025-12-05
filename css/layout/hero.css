@@ -3,7 +3,6 @@
 .hero {
   padding-top: 60px;
   padding-bottom: 46px;
-  font-family: var(--font-primary);
   background-color: var(--color-bg-dark);
 }
 

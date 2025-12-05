@@ -25,9 +25,9 @@
   --color-state-primary: #20c08b;
   --color-state-secondary: #0075b9;
 
-  --color--plan-free: #20c08b;
-  --color--plan-premium: #ffc942;
-  --color--plan-trial: #009bff;
+  --color-plan-free: #20c08b;
+  --color-plan-premium: #ffc942;
+  --color-plan-trial: #009bff;
 
   --color-dark-gray: #30444e;
   --color-dark-gray-button: #465861;

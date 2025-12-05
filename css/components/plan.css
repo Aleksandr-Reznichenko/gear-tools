@@ -7,11 +7,11 @@
 }
 
 .plan--free {
-  color: var(--color--plan-free);
+  color: var(--color-plan-free);
 }
 .plan--premium {
-  color: var(--color--plan-premium);
+  color: var(--color-plan-premium);
 }
 .plan--trial {
-  color: var(--color--plan-trial);
+  color: var(--color-plan-trial);
 }

@@ -1,9 +1,8 @@
 body {
-  font-family: var(--font-prymary);
-  background-color: var(--color-bg-body);
-  color: var(--color-text-secondary);
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-primary);
+  background-color: var(--color-bg-body);
 }
 
 h1,
@@ -44,7 +43,7 @@ button {
 }
 
 .title {
-  font-family: var(--font-prymary);
+  font-family: var(--font-primary);
   font-weight: 600;
   font-size: 36px;
   line-height: 0.88;
@@ -53,7 +52,7 @@ button {
 }
 
 .subtitle {
-  font-family: var(--font-prymary);
+  font-family: var(--font-primary);
   font-weight: 500;
   font-size: 24px;
   line-height: 1.5;

@@ -5,10 +5,6 @@
 
 /* ======= MOBILE ======= */
 
-.popular {
-  font-family: var(--font-primary);
-}
-
 .popular__title {
   margin-bottom: 16px;
   font-size: 34px;

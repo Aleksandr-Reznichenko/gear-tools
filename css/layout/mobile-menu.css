@@ -10,7 +10,6 @@
     overflow-y: auto;
     transform: translateX(100%);
 
-    font-family: var(--font-primary);
     background-color: var(--color-bg-dark);
 
     transition: transform 500ms var(--timing-function);

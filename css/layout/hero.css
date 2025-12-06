@@ -125,19 +125,8 @@
   color: var(--color-text-light);
 }
 
-/* Explore Now link */
-
 .hero__link {
-  display: inline-block;
   margin-bottom: 32px;
-  padding-inline: 28px;
-  border-radius: 8px;
-  background-color: var(--color-accent);
-  font-size: 20px;
-  line-height: 3.05;
-  letter-spacing: 0.01em;
-  text-transform: capitalize;
-  color: var(--color-text-light);
 }
 
 /* stats */

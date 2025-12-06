@@ -11,6 +11,19 @@
   color: var(--color-text-light);
 }
 
+/* Explore Now link */
+.hero-link {
+  display: inline-block;
+  padding-inline: 28px;
+  border-radius: 8px;
+  background-color: var(--color-accent);
+  font-size: 20px;
+  line-height: 3.05;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: var(--color-text-light);
+}
+
 /* See All link btn */
 .page-link {
   padding: 8px 46px;

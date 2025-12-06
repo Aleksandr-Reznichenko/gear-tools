@@ -14,7 +14,6 @@
 @import './layout/trusted-brands.css';
 @import './layout/testimonials.css';
 @import './layout/footer.css';
-
 @import './layout/mobile-menu.css';
 
 /* ======= components ======= */
@@ -23,3 +22,6 @@
 @import './components/gray-circle.css';
 @import './components/tag.css';
 @import './components/plan.css';
+
+/* ======= pages ======= */
+@import './pages/popular-page.css';

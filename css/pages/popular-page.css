@@ -1,3 +1,5 @@
+/* ======= MOBILE ======= */
+
 .hero-popular {
   padding-block: 79px 166px;
   text-align: center;
@@ -38,6 +40,46 @@
   }
 }
 
+/* pagination  */
+
+.pagination {
+  text-align: center;
+}
+
+.pagination__list {
+  display: inline-flex;
+  column-gap: 4px;
+}
+
+.pagination__page {
+  width: 40px;
+  height: 40px;
+}
+
+.pagination__page,
+.pagination__next {
+  background-color: transparent;
+  border: 1px solid var(--color-border-pagination);
+  padding: 4px 14px;
+  border-radius: 2px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: var(--color-pagination);
+}
+
+.pagination__page.is-active {
+  border: 0;
+  background-color: var(--color-pagination);
+  color: var(--color-text-light);
+}
+
+.pagination__page:not(.is-active) {
+  cursor: pointer;
+}
+
 /* ======= TABLET ======= */
 
 @media screen and (min-width: 768px) {
@@ -65,6 +107,20 @@
   .hero-popular {
     padding-block: 136px;
     background-size: 1200px 450px;
+  }
+
+  .pagination__page,
+  .pagination__next {
+    transition: background-color var(--duration) var(--timing-function),
+      color var(--duration) var(--timing-function);
+  }
+
+  .pagination__page:not(.is-active):hover,
+  .pagination__page:not(.is-active):focus,
+  .pagination__next:not(.is-active):hover,
+  .pagination__next:not(.is-active):focus {
+    background-color: var(--color-pagination);
+    color: var(--color-text-light);
   }
 }
 

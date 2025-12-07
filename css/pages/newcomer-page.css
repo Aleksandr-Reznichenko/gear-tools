@@ -1,0 +1,88 @@
+/* ======= MOBILE ======= */
+.hero-newcomer {
+  padding-block: 80px 187px;
+  text-align: center;
+  background-color: var(--color-bg-dark);
+}
+
+.hero-newcomer__title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 0.88;
+  letter-spacing: 0.01em;
+  color: var(--color-text-light);
+}
+
+.hero-newcomer__description {
+  margin-bottom: 32px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--color-text-light);
+}
+
+@media screen and (max-width: 767px) {
+  .hero-newcomer {
+    background-image: url(../../images/newcomer-tools/hero-bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center bottom 69px;
+    background-size: 383px 216px;
+  }
+}
+
+/* bg-image @2x for mobile */
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .hero-newcomer {
+    background-image: url(../../images/newcomer-tools/hero-bg-mobile@2x.png);
+  }
+}
+
+/* ======= TABLET ======= */
+
+@media screen and (min-width: 768px) {
+  .hero-newcomer {
+    padding-block: 50px;
+    background-image: url(../../images/newcomer-tools/hero-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 768px 234px;
+  }
+}
+
+/* bg-image @2x for tablet */
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .hero-newcomer {
+    background-image: url(../../images/newcomer-tools/hero-bg-desktop@2x.png);
+  }
+}
+
+/* ======= LAPTOP ======= */
+
+@media screen and (min-width: 1200px) {
+  .hero-newcomer {
+    padding-block: 120px;
+    background-size: 1200px 365px;
+  }
+
+  .hero-newcomer__link {
+    transition: background-color var(--duration) var(--timing-function);
+  }
+
+  .hero-newcomer__link:hover,
+  .hero-newcomer__link:focus {
+    background-color: var(--color-state-secondary);
+  }
+}
+
+/* ======= DESKTOP ======= */
+
+@media screen and (min-width: 1440px) {
+  .hero-newcomer {
+    padding-block: 160px;
+    background-size: 1439px 438px;
+  }
+}

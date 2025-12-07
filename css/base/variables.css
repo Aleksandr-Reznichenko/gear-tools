@@ -34,8 +34,10 @@
   --color-light-green: #2fd886;
   --color-light-red: #f36;
 
+  --color-pagination: #1f2e35;
   --color-star-rating: #ffc942;
   --color-border-testimonials: #dedede;
+  --color-border-pagination: rgba(0, 0, 0, 0.2);
   --color-line-footer: #666666;
   --color-placeholder-form: #737b7d;
 

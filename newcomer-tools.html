@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Modern-normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Poppins:wght@400;500;600&family=Roboto:wght@400&display=swap"
+      rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+
+    <title>Newcomer Tools</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header__container">
+        <!-- logotype -->
+        <a class="header__logo link" href="./">
+          <img
+            src="./images/logo.png"
+            srcset="./images/logo@2x.png 2x"
+            alt="Gear Tools logo"
+            width="40" />
+        </a>
+
+        <!-- navigation -->
+        <nav class="header__nav" aria-label="Main navigation">
+          <ul class="header__list list">
+            <li class="header__item">
+              <a class="header__link link" href="./index.html">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="./popular-tools.html">
+                Popular
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="./newcomer-tools.html">
+                Newcomer
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="./about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- login -->
+        <a class="login-link header__login link" href="#">Login</a>
+
+        <!-- burger menu -->
+        <button
+          class="header__burger js-open-menu"
+          type="button"
+          aria-label="Open main navigation">
+          <svg
+            class="header__burger-icon"
+            width="25"
+            height="21"
+            aria-hidden="true">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- Hero section -->
+      <section class="hero-newcomer">
+        <div class="container hero-newcomer__container">
+          <h1 class="hero-newcomer__title">Newcomer Tools</h1>
+
+          <p class="hero-newcomer__description">New tools gains popularity</p>
+
+          <a class="hero-link link" href="#newcomer">Explore now</a>
+        </div>
+      </section>
+
+      <!-- Newcomer Tools section -->
+      <section class="section newcomer" id="newcomer">
+        <div class="container newcomer__container">
+          <!-- list of newcomer tools cards  -->
+          <ul class="newcomer__cards list">
+            <!-- Framer -->
+            <li class="newcomer__card">
+              <a
+                class="newcomer__card-link link"
+                href="https://www.framer.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <!-- brand icon -->
+                <div class="newcomer__card-icon">
+                  <img
+                    class="newcomer__icon"
+                    src="./images/newcomer-tools/framer.png"
+                    srcset="./images/newcomer-tools/framer@2x.png 2x"
+                    width="66"
+                    alt="Framer icon" />
+                </div>
+
+                <!-- card info -->
+                <div class="newcomer__info">
+                  <div class="newcomer__info-wrapper">
+                    <div class="newcomer__head">
+                      <h3 class="subtitle">Framer</h3>
+                      <span class="plan plan--free">Free</span>
+                    </div>
+
+                    <p class="newcomer__text">
+                      It's prototyping made simple—no code required,
+                      browser-based.
+                    </p>
+                  </div>
+
+                  <!-- list tags -->
+                  <ul class="newcomer__tags list">
+                    <li class="tag">Design</li>
+                    <li class="tag">Development</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+
+            <!-- Whimsical -->
+            <li class="newcomer__card">
+              <a
+                class="newcomer__card-link link"
+                href="https://whimsical.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <!-- brand icon -->
+                <div class="newcomer__card-icon">
+                  <img
+                    class="newcomer__icon"
+                    src="./images/newcomer-tools/whimsical.png"
+                    srcset="./images/newcomer-tools/whimsical@2x.png 2x"
+                    width="100"
+                    alt="Whimsical icon" />
+                </div>
+
+                <!-- card info -->
+                <div class="newcomer__info">
+                  <div class="newcomer__info-wrapper">
+                    <div class="newcomer__head">
+                      <h3 class="subtitle">Whimsical</h3>
+                      <span class="plan plan--free">Free</span>
+                    </div>
+
+                    <p class="newcomer__text">
+                      Communicate visually at the speed of thought collaborative
+                      flowcharts.
+                    </p>
+                  </div>
+
+                  <!-- list tags -->
+                  <ul class="newcomer__tags list">
+                    <li class="tag">Design</li>
+                    <li class="tag">Development</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+
+            <!-- MindMaster -->
+            <li class="newcomer__card">
+              <a
+                class="newcomer__card-link link"
+                href="https://www.edrawmind.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <!-- brand icon -->
+                <div class="newcomer__card-icon">
+                  <img
+                    class="newcomer__icon"
+                    src="./images/newcomer-tools/mindmaster.png"
+                    srcset="./images/newcomer-tools/mindmaster@2x.png 2x"
+                    width="100"
+                    alt="MindMaster icon" />
+                </div>
+
+                <!-- card info -->
+                <div class="newcomer__info">
+                  <div class="newcomer__info-wrapper">
+                    <div class="newcomer__head">
+                      <h3 class="subtitle">MindMaster</h3>
+                      <span class="plan plan--trial">FREE 30 DAY</span>
+                    </div>
+
+                    <p class="newcomer__text">
+                      Full-featured collaborative mind mapping and brainstorming
+                      tool.
+                    </p>
+                  </div>
+
+                  <!-- list tags -->
+                  <ul class="newcomer__tags list">
+                    <li class="tag">Design</li>
+                    <li class="tag">Development</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+
+            <!-- Zapier -->
+            <li class="newcomer__card">
+              <a
+                class="newcomer__card-link link"
+                href="https://zapier.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <!-- brand icon -->
+                <div class="newcomer__card-icon">
+                  <img
+                    class="newcomer__icon"
+                    src="./images/newcomer-tools/zapier.png"
+                    srcset="./images/newcomer-tools/zapier@2x.png 2x"
+                    width="104"
+                    alt="Zapier icon" />
+                </div>
+
+                <!-- card info -->
+                <div class="newcomer__info">
+                  <div class="newcomer__info-wrapper">
+                    <div class="newcomer__head">
+                      <h3 class="subtitle">Zapier</h3>
+                      <span class="plan plan--premium">PREMIUM</span>
+                    </div>
+
+                    <p class="newcomer__text">
+                      Zapier moves info between your web apps automatically.
+                    </p>
+                  </div>
+
+                  <!-- list tags -->
+                  <ul class="newcomer__tags list">
+                    <li class="tag">Design</li>
+                    <li class="tag">Development</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+
+            <!-- Atom -->
+            <li class="newcomer__card">
+              <a
+                class="newcomer__card-link link"
+                href="https://atom-attachments.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <!-- brand icon -->
+                <div class="newcomer__card-icon">
+                  <img
+                    class="newcomer__icon"
+                    src="./images/newcomer-tools/atom.svg"
+                    width="100"
+                    alt="Atom icon"
+                    loading="lazy" />
+                </div>
+
+                <!-- card info -->
+                <div class="newcomer__info">
+                  <div class="newcomer__info-wrapper">
+                    <div class="newcomer__head">
+                      <h3 class="subtitle">Atom</h3>
+                      <span class="plan plan--free">Free</span>
+                    </div>
+
+                    <p class="newcomer__text">
+                      Atom is a Full-featured collaborative desktop text editor
+                    </p>
+                  </div>
+
+                  <!-- list tags -->
+                  <ul class="newcomer__tags list">
+                    <li class="tag">Design</li>
+                    <li class="tag">Development</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+
+            <!-- Marvel -->
+            <li class="newcomer__card">
+              <a
+                class="newcomer__card-link link"
+                href="https://marvelapp.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <!-- brand icon -->
+                <div class="newcomer__card-icon">
+                  <img
+                    class="newcomer__icon"
+                    src="./images/newcomer-tools/marvel.svg"
+                    width="100"
+                    alt="Marvel icon" />
+                </div>
+
+                <!-- card info -->
+                <div class="newcomer__info">
+                  <div class="newcomer__info-wrapper">
+                    <div class="newcomer__head">
+                      <h3 class="subtitle">Marvel</h3>
+                      <span class="plan plan--premium">PREMIUM</span>
+                    </div>
+
+                    <p class="newcomer__text">
+                      Marvel is web design tool that's great for producing quick
+                      ideas.
+                    </p>
+                  </div>
+
+                  <!-- list tags -->
+                  <ul class="newcomer__tags list">
+                    <li class="tag">Design</li>
+                    <li class="tag">Development</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+
+            <!-- ProtoPie -->
+            <li class="newcomer__card">
+              <a
+                class="newcomer__card-link link"
+                href="https://www.protopie.io/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <!-- brand icon -->
+                <div class="newcomer__card-icon">
+                  <img
+                    class="newcomer__icon"
+                    src="./images/newcomer-tools/protopie.png"
+                    srcset="./images/newcomer-tools/protopie@2x.png 2x"
+                    width="101"
+                    alt="ProtoPie icon" />
+                </div>
+
+                <!-- card info -->
+                <div class="newcomer__info">
+                  <div class="newcomer__info-wrapper">
+                    <div class="newcomer__head">
+                      <h3 class="subtitle">ProtoPie</h3>
+                      <span class="plan plan--trial">FREE 30 DAY</span>
+                    </div>
+
+                    <p class="newcomer__text">
+                      ProtoPie allows to create complex interactions design's.
+                    </p>
+                  </div>
+
+                  <!-- list tags -->
+                  <ul class="newcomer__tags list">
+                    <li class="tag">Design</li>
+                    <li class="tag">Development</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+
+            <!-- Mockflow -->
+            <li class="newcomer__card">
+              <a
+                class="newcomer__card-link link"
+                href="https://mockflow.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <!-- brand icon -->
+                <div class="newcomer__card-icon">
+                  <img
+                    class="newcomer__icon"
+                    src="./images/newcomer-tools/mockflow.svg"
+                    width="100"
+                    alt="Mockflow icon" />
+                </div>
+
+                <!-- card info -->
+                <div class="newcomer__info">
+                  <div class="newcomer__info-wrapper">
+                    <div class="newcomer__head">
+                      <h3 class="subtitle">Mockflow</h3>
+                      <span class="plan plan--trial">FREE 30 DAY</span>
+                    </div>
+
+                    <p class="newcomer__text">
+                      MockFlow is a suite of applications for wireframing and
+                      planning websites.
+                    </p>
+                  </div>
+
+                  <!-- list tags -->
+                  <ul class="newcomer__tags list">
+                    <li class="tag">Design</li>
+                    <li class="tag">Development</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+
+            <!-- Justinmind -->
+            <li class="newcomer__card">
+              <a
+                class="newcomer__card-link link"
+                href="https://www.justinmind.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <!-- brand icon -->
+                <div class="newcomer__card-icon">
+                  <img
+                    class="newcomer__icon"
+                    src="./images/newcomer-tools/justinmind.png"
+                    srcset="./images/newcomer-tools/justinmind@2x.png 2x"
+                    width="108"
+                    alt="Justinmind icon" />
+                </div>
+
+                <!-- card info -->
+                <div class="newcomer__info">
+                  <div class="newcomer__info-wrapper">
+                    <div class="newcomer__head">
+                      <h3 class="subtitle">Justinmind</h3>
+                      <span class="plan plan--trial">FREE 30 DAY</span>
+                    </div>
+
+                    <p class="newcomer__text">
+                      Justinmind will help with prototyping, and integrates with
+                      other tools.
+                    </p>
+                  </div>
+
+                  <!-- list tags -->
+                  <ul class="newcomer__tags list">
+                    <li class="tag">Design</li>
+                    <li class="tag">Development</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+
+            <!-- Interplay -->
+            <li class="newcomer__card">
+              <a
+                class="newcomer__card-link link"
+                href="https://interplayapp.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <!-- brand icon -->
+                <div class="newcomer__card-icon">
+                  <img
+                    class="newcomer__icon"
+                    src="./images/newcomer-tools/interplay.png"
+                    srcset="./images/newcomer-tools/interplay@2x.png 2x"
+                    width="100"
+                    alt="Interplay icon" />
+                </div>
+
+                <!-- card info -->
+                <div class="newcomer__info">
+                  <div class="newcomer__info-wrapper">
+                    <div class="newcomer__head">
+                      <h3 class="subtitle">Interplay</h3>
+                      <span class="plan plan--trial">FREE 30 DAY</span>
+                    </div>
+
+                    <p class="newcomer__text">
+                      Prototyping system that improves communication and
+                      collaboration.
+                    </p>
+                  </div>
+
+                  <!-- list tags -->
+                  <ul class="newcomer__tags list">
+                    <li class="tag">Design</li>
+                    <li class="tag">Development</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <!-- pagination -->
+          <div class="pagination">
+            <ul class="pagination__list list">
+              <li class="pagination__page is-active">1</li>
+              <li class="pagination__page">2</li>
+              <li class="pagination__page">3</li>
+            </ul>
+            <button class="pagination__next" type="button">Next</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <!-- Top footer -->
+      <div class="container footer__top">
+        <h2 class="title footer__title">Subscribe</h2>
+
+        <p class="footer__description">
+          Subscribe to get exclusive news & offer
+        </p>
+
+        <!-- subscribe -->
+        <form class="footer__form">
+          <label class="footer__label">
+            <input
+              class="footer__input"
+              type="email"
+              name="email"
+              placeholder="Email address"
+              autocomplete="off"
+              maxlength="30"
+              required />
+          </label>
+
+          <button class="footer__form-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="line" aria-hidden="true"></div>
+
+      <!-- Middle footer -->
+      <div class="container footer__middle">
+        <!-- logo / social -->
+        <div class="footer__brand">
+          <!-- logotype -->
+          <a class="footer__logo link" href="./">
+            <img
+              src="./images/logo.png"
+              srcset="./images/logo@2x.png 2x"
+              alt="Gear Tools logo"
+              width="40"
+              loading="lazy" />
+            Gear
+          </a>
+
+          <!-- social list -->
+          <ul class="footer__social-list list">
+            <!-- facebook -->
+            <li class="footer__social-item">
+              <a
+                class="footer-social-link link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <svg
+                  class="footer-social-icon"
+                  width="24"
+                  height="24"
+                  aria-label="Facebook icon">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- instagram -->
+            <li class="footer__social-item">
+              <a
+                class="footer-social-link link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <svg
+                  class="footer-social-icon"
+                  width="24"
+                  height="24"
+                  aria-label="Instagram icon">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- twitter -->
+            <li class="footer__social-item">
+              <a
+                class="footer-social-link link"
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <svg
+                  class="footer-social-icon"
+                  width="24"
+                  height="20"
+                  aria-label="Twitter icon">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- resources -->
+        <div class="footer__resources">
+          <h3 class="subtitle footer__subtitle">Resource</h3>
+
+          <!-- list link -->
+          <ul class="footer__resources-list list">
+            <li class="footer__resources-item">
+              <a class="footer__resources-link link" href="#">About Us</a>
+            </li>
+            <li class="footer__resources-item">
+              <a class="footer__resources-link link" href="#">Blog</a>
+            </li>
+            <li class="footer__resources-item">
+              <a class="footer__resources-link link" href="#">Contact</a>
+            </li>
+            <li class="footer__resources-item">
+              <a class="footer__resources-link link" href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- legal -->
+        <div class="footer__legal">
+          <h3 class="subtitle footer__subtitle">Legal Stuff</h3>
+
+          <!-- list link -->
+          <ul class="footer__legal-list list">
+            <li class="footer__legal-item">
+              <a class="footer__legal-link link" href="#">Disclaimer</a>
+            </li>
+            <li class="footer__legal-item">
+              <a class="footer__legal-link link" href="#">Financing</a>
+            </li>
+            <li class="footer__legal-item">
+              <a class="footer__legal-link link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer__legal-item">
+              <a class="footer__legal-link link" href="#">Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- office -->
+        <div class="footer__office">
+          <h3 class="subtitle footer__subtitle">Office</h3>
+
+          <address class="footer__address">
+            <a class="footer__address-link link" href="mailto:gear@gmail.com">
+              gear@gmail.com
+            </a>
+            <p class="footer__address-text">Jln. Soekarno Hatta No 1A</p>
+            <p class="footer__address-text">Jakarta, Indonesia</p>
+          </address>
+        </div>
+      </div>
+
+      <!-- Bottom footer -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          Made with love by Gear. All right reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- MOBILE MENU -->
+    <div class="menu js-menu-container" id="mobile-menu">
+      <div class="container menu__container">
+        <!-- header menu -->
+        <div class="menu__header">
+          <!-- logotype -->
+          <a class="menu__logo link" href="./index.html">
+            <img
+              src="./images/logo.png"
+              srcset="./images/logo@2x.png 2x"
+              alt="Gear Tools logo"
+              width="40" />
+          </a>
+
+          <!-- close button -->
+          <button
+            class="menu__close js-close-menu"
+            type="button"
+            aria-label="Close main navigation">
+            <svg
+              class="menu__close-icon"
+              width="20"
+              height="20"
+              aria-hidden="false">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <!-- main content -->
+        <div class="menu__main">
+          <!-- navigation -->
+          <nav class="menu__nav" aria-label="Main navigation">
+            <ul class="menu__list list">
+              <li class="menu__item">
+                <a class="menu__link link" href="./index.html">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="./popular-tools.html">
+                  Popular
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="./newcomer-tools.html">
+                  Newcomer
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="./about.html">About</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- login -->
+          <a class="login-link menu__login link" href="#">Login</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/current-page.js"></script>
+    <script src="./js/scroll-page.js"></script>
+  </body>
+</html>

@@ -22,6 +22,8 @@
 @import './components/gray-circle.css';
 @import './components/tag.css';
 @import './components/plan.css';
+@import './components/pagination.css';
 
 /* ======= pages ======= */
 @import './pages/popular-page.css';
+@import './pages/newcomer-page.css';

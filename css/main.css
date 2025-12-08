@@ -25,6 +25,7 @@
 @import './components/pagination.css';
 
 /* ======= pages ======= */
-@import './pages/popular-page.css';
-@import './pages/newcomer-page.css';
-@import './pages/about.css';
+@import './pages/popular-page/hero.css';
+@import './pages/newcomer-page/hero.css';
+@import './pages/about-page/hero.css';
+@import './pages/about-page/team-culture.css';

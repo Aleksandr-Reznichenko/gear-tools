@@ -1,0 +1,125 @@
+.hero-about {
+  background-image: url(../../images/about/hero-bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  z-index: 1;
+}
+
+.hero-about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 24px;
+
+  height: 100%;
+  text-align: center;
+}
+
+.hero-about__container {
+  position: relative;
+}
+
+.hero-about__container::before {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 20px;
+  width: 360px;
+  height: 164px;
+  background-image: url(../../images/about/hero-bg-decor.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.hero-about__container::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 360px;
+  height: 164px;
+  background-image: url(../../images/about/hero-bg-decor.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(135deg);
+  z-index: 2;
+}
+
+.hero-about__title {
+  max-width: 550px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.55;
+  color: var(--color-text-light);
+  z-index: 3;
+}
+
+.hero-about__title-accent {
+  color: var(--color-accent);
+}
+
+.hero-about__description {
+  max-width: 570px;
+  line-height: 1.53;
+  color: var(--color-text-light);
+  z-index: 3;
+}
+
+/* ======= TABLET ======= */
+
+@media screen and (min-width: 768px) {
+  .hero-about {
+    background-image: url(../../images/about/hero-bg-desktop.svg);
+    height: 400px;
+  }
+
+  .hero-about__container::after {
+    top: 20%;
+  }
+
+  .hero-about__title {
+    max-width: 650px;
+    font-size: 36px;
+  }
+
+  .hero-about__description {
+    font-size: 18px;
+  }
+}
+
+/* ======= LAPTOP ======= */
+
+@media screen and (min-width: 1200px) {
+  .hero-about__container::before {
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+  }
+
+  .hero-about__container::after {
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%) rotate(135deg);
+  }
+
+  .hero-about__title {
+    font-size: 38px;
+  }
+}
+
+/* ======= DESKTOP ======= */
+
+@media screen and (min-width: 1440px) {
+  .hero-about__container::after {
+    right: 80px;
+  }
+
+  .hero-about__title {
+    max-width: 692px;
+    font-size: 40px;
+  }
+}

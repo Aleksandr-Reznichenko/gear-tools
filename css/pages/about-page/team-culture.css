@@ -1,0 +1,52 @@
+.team-culture__container {
+  text-align: center;
+}
+
+.team-culture__title {
+  display: inline-block;
+  margin-bottom: 16px;
+  max-width: 348px;
+  font-size: 32px;
+  line-height: 1.43;
+}
+
+.team-culture__description {
+  margin-bottom: 50px;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
+
+/* list photos */
+
+.team-culture__list {
+  position: relative;
+  margin-inline: auto;
+  width: 362px;
+  height: 230px;
+}
+
+.team-culture__item {
+  position: absolute;
+}
+
+.team-culture__item:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 230px;
+  z-index: 2;
+}
+
+.team-culture__item:nth-child(2) {
+  bottom: 10%;
+  left: 0;
+  width: 137px;
+  z-index: 3;
+}
+
+.team-culture__item:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 186px;
+  z-index: 1;
+}

@@ -1,6 +1,6 @@
 .hero-about {
   background-image: url(../../images/about/hero-bg-mobile.svg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
   height: 500px;
   z-index: 1;
@@ -13,40 +13,9 @@
   align-items: center;
   row-gap: 24px;
 
+  position: relative;
   height: 100%;
   text-align: center;
-}
-
-.hero-about__container {
-  position: relative;
-}
-
-.hero-about__container::before {
-  content: '';
-  position: absolute;
-  bottom: -40px;
-  left: 20px;
-  width: 360px;
-  height: 164px;
-  background-image: url(../../images/about/hero-bg-decor.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: translateY(-50%);
-  z-index: 2;
-}
-
-.hero-about__container::after {
-  content: '';
-  position: absolute;
-  top: 10%;
-  right: 0;
-  width: 360px;
-  height: 164px;
-  background-image: url(../../images/about/hero-bg-decor.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: rotate(135deg);
-  z-index: 2;
 }
 
 .hero-about__title {
@@ -69,12 +38,43 @@
   z-index: 3;
 }
 
+@media screen and (min-width: 411px) {
+  .hero-about__container::before {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 20px;
+    width: 360px;
+    height: 164px;
+    background-image: url(../../images/about/hero-bg-decor.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  .hero-about__container::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 360px;
+    height: 164px;
+    background-image: url(../../images/about/hero-bg-decor.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(135deg);
+    z-index: 2;
+  }
+}
+
 /* ======= TABLET ======= */
 
 @media screen and (min-width: 768px) {
   .hero-about {
     background-image: url(../../images/about/hero-bg-desktop.svg);
     height: 400px;
+    background-repeat: repeat;
   }
 
   .hero-about__container::after {

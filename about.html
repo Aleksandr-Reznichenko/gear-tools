@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Modern-normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Poppins:wght@400;500;600&family=Roboto:wght@400&display=swap"
+      rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+
+    <title>Build Amazing Things</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header__container">
+        <!-- logotype -->
+        <a class="header__logo link" href="./">
+          <img
+            src="./images/logo.png"
+            srcset="./images/logo@2x.png 2x"
+            alt="Gear Tools logo"
+            width="40" />
+        </a>
+
+        <!-- navigation -->
+        <nav class="header__nav" aria-label="Main navigation">
+          <ul class="header__list list">
+            <li class="header__item">
+              <a class="header__link link" href="./index.html">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="./popular-tools.html">
+                Popular
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="./newcomer-tools.html">
+                Newcomer
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="./about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- login -->
+        <a class="login-link header__login link" href="#">Login</a>
+
+        <!-- burger menu -->
+        <button
+          class="header__burger js-open-menu"
+          type="button"
+          aria-label="Open main navigation">
+          <svg
+            class="header__burger-icon"
+            width="25"
+            height="21"
+            aria-hidden="true">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- Hero section -->
+      <section class="hero-about">
+        <div class="container hero-about__container">
+          <h1 class="hero-about__title">
+            We enable designer & developers to
+            <span class="hero-about__title-accent">build amazing things</span>
+          </h1>
+
+          <p class="hero-about__description">
+            We have transformed product development, making it faster,
+            simpler... better! That's why in just three years we now help more
+            developers build projects than anyone else.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">section</section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <!-- Top footer -->
+      <div class="container footer__top">
+        <h2 class="title footer__title">Subscribe</h2>
+
+        <p class="footer__description">
+          Subscribe to get exclusive news & offer
+        </p>
+
+        <!-- subscribe -->
+        <form class="footer__form">
+          <label class="footer__label">
+            <input
+              class="footer__input"
+              type="email"
+              name="email"
+              placeholder="Email address"
+              autocomplete="off"
+              maxlength="30"
+              required />
+          </label>
+
+          <button class="footer__form-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="line" aria-hidden="true"></div>
+
+      <!-- Middle footer -->
+      <div class="container footer__middle">
+        <!-- logo / social -->
+        <div class="footer__brand">
+          <!-- logotype -->
+          <a class="footer__logo link" href="./">
+            <img
+              src="./images/logo.png"
+              srcset="./images/logo@2x.png 2x"
+              alt="Gear Tools logo"
+              width="40"
+              loading="lazy" />
+            Gear
+          </a>
+
+          <!-- social list -->
+          <ul class="footer__social-list list">
+            <!-- facebook -->
+            <li class="footer__social-item">
+              <a
+                class="footer-social-link link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <svg
+                  class="footer-social-icon"
+                  width="24"
+                  height="24"
+                  aria-label="Facebook icon">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- instagram -->
+            <li class="footer__social-item">
+              <a
+                class="footer-social-link link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <svg
+                  class="footer-social-icon"
+                  width="24"
+                  height="24"
+                  aria-label="Instagram icon">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- twitter -->
+            <li class="footer__social-item">
+              <a
+                class="footer-social-link link"
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <svg
+                  class="footer-social-icon"
+                  width="24"
+                  height="20"
+                  aria-label="Twitter icon">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- resources -->
+        <div class="footer__resources">
+          <h3 class="subtitle footer__subtitle">Resource</h3>
+
+          <!-- list link -->
+          <ul class="footer__resources-list list">
+            <li class="footer__resources-item">
+              <a class="footer__resources-link link" href="#">About Us</a>
+            </li>
+            <li class="footer__resources-item">
+              <a class="footer__resources-link link" href="#">Blog</a>
+            </li>
+            <li class="footer__resources-item">
+              <a class="footer__resources-link link" href="#">Contact</a>
+            </li>
+            <li class="footer__resources-item">
+              <a class="footer__resources-link link" href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- legal -->
+        <div class="footer__legal">
+          <h3 class="subtitle footer__subtitle">Legal Stuff</h3>
+
+          <!-- list link -->
+          <ul class="footer__legal-list list">
+            <li class="footer__legal-item">
+              <a class="footer__legal-link link" href="#">Disclaimer</a>
+            </li>
+            <li class="footer__legal-item">
+              <a class="footer__legal-link link" href="#">Financing</a>
+            </li>
+            <li class="footer__legal-item">
+              <a class="footer__legal-link link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer__legal-item">
+              <a class="footer__legal-link link" href="#">Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- office -->
+        <div class="footer__office">
+          <h3 class="subtitle footer__subtitle">Office</h3>
+
+          <address class="footer__address">
+            <a class="footer__address-link link" href="mailto:gear@gmail.com">
+              gear@gmail.com
+            </a>
+            <p class="footer__address-text">Jln. Soekarno Hatta No 1A</p>
+            <p class="footer__address-text">Jakarta, Indonesia</p>
+          </address>
+        </div>
+      </div>
+
+      <!-- Bottom footer -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          Made with love by Gear. All right reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- MOBILE MENU -->
+    <div class="menu js-menu-container" id="mobile-menu">
+      <div class="container menu__container">
+        <!-- header menu -->
+        <div class="menu__header">
+          <!-- logotype -->
+          <a class="menu__logo link" href="./index.html">
+            <img
+              src="./images/logo.png"
+              srcset="./images/logo@2x.png 2x"
+              alt="Gear Tools logo"
+              width="40" />
+          </a>
+
+          <!-- close button -->
+          <button
+            class="menu__close js-close-menu"
+            type="button"
+            aria-label="Close main navigation">
+            <svg
+              class="menu__close-icon"
+              width="20"
+              height="20"
+              aria-hidden="false">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <!-- main content -->
+        <div class="menu__main">
+          <!-- navigation -->
+          <nav class="menu__nav" aria-label="Main navigation">
+            <ul class="menu__list list">
+              <li class="menu__item">
+                <a class="menu__link link" href="./index.html">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="./popular-tools.html">
+                  Popular
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="./newcomer-tools.html">
+                  Newcomer
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="./about.html">About</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- login -->
+          <a class="login-link menu__login link" href="#">Login</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/current-page.js"></script>
+    <script src="./js/scroll-page.js"></script>
+  </body>
+</html>

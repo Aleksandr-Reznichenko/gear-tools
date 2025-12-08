@@ -1,5 +1,5 @@
 .hero-about {
-  background-image: url(../../images/about/hero-bg-mobile.svg);
+  background-image: url(../../../images/about/hero/bg-mobile.svg);
   background-repeat: repeat;
   background-position: center;
   height: 500px;
@@ -39,32 +39,28 @@
 }
 
 @media screen and (min-width: 411px) {
-  .hero-about__container::before {
-    content: '';
-    position: absolute;
-    bottom: -40px;
-    left: 20px;
-    width: 360px;
-    height: 164px;
-    background-image: url(../../images/about/hero-bg-decor.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    transform: translateY(-50%);
-    z-index: 2;
-  }
-
+  .hero-about__container::before,
   .hero-about__container::after {
     content: '';
     position: absolute;
-    top: 10%;
-    right: 0;
     width: 360px;
     height: 164px;
-    background-image: url(../../images/about/hero-bg-decor.svg);
+    background-image: url(../../../images/about/hero/decor.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    transform: rotate(135deg);
     z-index: 2;
+  }
+
+  .hero-about__container::before {
+    bottom: -40px;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+
+  .hero-about__container::after {
+    top: 10%;
+    right: 0;
+    transform: rotate(135deg);
   }
 }
 
@@ -72,7 +68,7 @@
 
 @media screen and (min-width: 768px) {
   .hero-about {
-    background-image: url(../../images/about/hero-bg-desktop.svg);
+    background-image: url(../../../images/about/hero/bg-desktop.svg);
     height: 400px;
     background-repeat: repeat;
   }

@@ -62,6 +62,11 @@
   column-gap: 16px;
 }
 
+.testimonials__user-avatar {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
 .testimonials__user-info {
   display: flex;
   flex-direction: column;

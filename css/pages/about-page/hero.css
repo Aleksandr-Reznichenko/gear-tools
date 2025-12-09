@@ -92,6 +92,10 @@
 /* ======= LAPTOP ======= */
 
 @media screen and (min-width: 1200px) {
+  .hero-about {
+    margin-bottom: 50px;
+  }
+
   .hero-about__container::before {
     top: 50%;
     left: 40px;

@@ -23,6 +23,7 @@
 @import './components/tag.css';
 @import './components/plan.css';
 @import './components/pagination.css';
+@import './components/back-to-top.css';
 
 /* ======= pages ======= */
 @import './pages/popular-page/hero.css';

@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 767px) {
   .hero-newcomer {
-    background-image: url(../../images/newcomer-tools/hero-bg-mobile.png);
+    background-image: url(../../../images/newcomer-tools/hero-bg-mobile.png);
     background-repeat: no-repeat;
     background-position: center bottom 69px;
     background-size: 383px 216px;
@@ -35,7 +35,7 @@
   screen and (min-resolution: 2dppx) and (max-width: 767px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   .hero-newcomer {
-    background-image: url(../../images/newcomer-tools/hero-bg-mobile@2x.png);
+    background-image: url(../../../images/newcomer-tools/hero-bg-mobile@2x.png);
   }
 }
 
@@ -44,7 +44,7 @@
 @media screen and (min-width: 768px) {
   .hero-newcomer {
     padding-block: 50px;
-    background-image: url(../../images/newcomer-tools/hero-bg-desktop.png);
+    background-image: url(../../../images/newcomer-tools/hero-bg-desktop.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 768px 234px;
@@ -56,7 +56,7 @@
   screen and (min-resolution: 2dppx) and (min-width: 768px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
   .hero-newcomer {
-    background-image: url(../../images/newcomer-tools/hero-bg-desktop@2x.png);
+    background-image: url(../../../images/newcomer-tools/hero-bg-desktop@2x.png);
   }
 }
 

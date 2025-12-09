@@ -1,9 +1,12 @@
+/* ======= MOBILE ======= */
+
 .team-culture__container {
   text-align: center;
 }
 
 .team-culture__title {
-  display: inline-block;
+  display: block;
+  margin-inline: auto;
   margin-bottom: 16px;
   max-width: 348px;
   font-size: 32px;
@@ -11,6 +14,8 @@
 }
 
 .team-culture__description {
+  display: block;
+  margin-inline: auto;
   margin-bottom: 50px;
   line-height: 1.5;
   color: var(--color-text-secondary);
@@ -21,12 +26,14 @@
 .team-culture__list {
   position: relative;
   margin-inline: auto;
-  width: 362px;
+  max-width: 362px;
   height: 230px;
 }
 
 .team-culture__item {
   position: absolute;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .team-culture__item:nth-child(1) {
@@ -35,13 +42,15 @@
   transform: translateX(-50%);
   width: 230px;
   z-index: 2;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
 }
 
 .team-culture__item:nth-child(2) {
   bottom: 10%;
   left: 0;
-  width: 137px;
+  width: 136px;
   z-index: 3;
+  box-shadow: 16px 16px 50px 0 rgba(0, 0, 0, 0.25);
 }
 
 .team-culture__item:nth-child(3) {
@@ -49,4 +58,70 @@
   right: 0;
   width: 186px;
   z-index: 1;
+  box-shadow: -8px 8px 32px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* ======= TABLET ======= */
+
+@media screen and (min-width: 768px) {
+  .team-culture__title {
+    margin-bottom: 20px;
+    max-width: 592px;
+    line-height: 0.88;
+  }
+
+  .team-culture__description {
+    font-size: 18px;
+    max-width: 500px;
+  }
+
+  /* list photos */
+
+  .team-culture__list {
+    max-width: 548px;
+    height: 336px;
+  }
+
+  .team-culture__item:nth-child(1) {
+    width: 336px;
+  }
+
+  .team-culture__item:nth-child(2) {
+    width: 237px;
+  }
+
+  .team-culture__item:nth-child(3) {
+    width: 271px;
+  }
+}
+
+/* ======= LAPTOP & DESKTOP ======= */
+
+@media screen and (min-width: 1200px) {
+  .team-culture__title {
+    margin-bottom: 24px;
+  }
+
+  .team-culture__description {
+    max-width: 692px;
+  }
+
+  /* list photos */
+
+  .team-culture__list {
+    max-width: 821px;
+    height: 505px;
+  }
+
+  .team-culture__item:nth-child(1) {
+    width: 504px;
+  }
+
+  .team-culture__item:nth-child(2) {
+    width: 356px;
+  }
+
+  .team-culture__item:nth-child(3) {
+    width: 406px;
+  }
 }

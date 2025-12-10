@@ -127,7 +127,7 @@
 
 /* ======= DESKTOP ======= */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .testimonials__list {
     column-gap: 32px;
   }

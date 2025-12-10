@@ -13,7 +13,6 @@
 
     if (normalizedHref === currentPath) {
       link.setAttribute('aria-current', 'page');
-      link.removeAttribute('href');
     } else {
       link.removeAttribute('aria-current');
     }

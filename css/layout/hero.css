@@ -110,6 +110,7 @@
 
 .hero__title {
   margin-bottom: 22px;
+  max-width: 528px;
   font-weight: 600;
   font-size: clamp(32px, calc(28.805px + 0.777vw), 40px);
   line-height: 1.62;
@@ -159,6 +160,35 @@
 .hero__usage-number {
   font-weight: 500;
   color: var(--color-accent);
+}
+
+/* ======= Typed Headline =======  */
+
+.hero__typed {
+  display: inline-block;
+  white-space: normal;
+  color: var(--color-accent);
+  word-break: break-word;
+}
+
+.hero__cursor {
+  display: inline-block;
+  width: 4px;
+  height: 1em;
+  background-color: currentColor;
+  margin-left: -6px;
+  animation: blink 800ms linear infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
 /* ======= LAPTOP ======= */

@@ -118,7 +118,7 @@
   background-color: var(--color-bg-social-icon);
 }
 
-.footer-social-link {
+.footer__social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,7 +128,7 @@
   border-radius: 50%;
 }
 
-.footer-social-icon {
+.footer__social-icon {
   fill: var(--color-accent);
 }
 

@@ -91,7 +91,9 @@
         <button
           class="header__burger js-open-menu"
           type="button"
-          aria-label="Open main navigation">
+          aria-label="Open main navigation"
+          aria-controls="mobile-menu"
+          aria-expanded="false">
           <svg
             class="header__burger-icon"
             width="25"
@@ -618,12 +620,12 @@
             <!-- facebook -->
             <li class="footer__social-item">
               <a
-                class="footer-social-link link"
+                class="footer__social-link link"
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer">
                 <svg
-                  class="footer-social-icon"
+                  class="footer__social-icon"
                   width="24"
                   height="24"
                   aria-label="Facebook icon">
@@ -634,12 +636,12 @@
             <!-- instagram -->
             <li class="footer__social-item">
               <a
-                class="footer-social-link link"
+                class="footer__social-link link"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer">
                 <svg
-                  class="footer-social-icon"
+                  class="footer__social-icon"
                   width="24"
                   height="24"
                   aria-label="Instagram icon">
@@ -650,12 +652,12 @@
             <!-- twitter -->
             <li class="footer__social-item">
               <a
-                class="footer-social-link link"
+                class="footer__social-link link"
                 href="https://x.com/"
                 target="_blank"
                 rel="noopener noreferrer">
                 <svg
-                  class="footer-social-icon"
+                  class="footer__social-icon"
                   width="24"
                   height="20"
                   aria-label="Twitter icon">
@@ -749,11 +751,7 @@
             class="menu__close js-close-menu"
             type="button"
             aria-label="Close main navigation">
-            <svg
-              class="menu__close-icon"
-              width="20"
-              height="20"
-              aria-hidden="false">
+            <svg class="menu__close-icon" width="20" height="20">
               <use href="./images/sprite.svg#icon-close"></use>
             </svg>
           </button>

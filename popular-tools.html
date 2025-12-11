@@ -30,11 +30,24 @@
       rel="stylesheet" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16.png" />
 
     <title>Most Popular Tools</title>
 
+    <!-- Custom Style -->
     <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- AOS animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- HEADER -->
@@ -94,7 +107,10 @@
     <main>
       <!-- Hero section -->
       <section class="hero-popular">
-        <div class="container hero-popular__container">
+        <div
+          class="container hero-popular__container"
+          data-aos="fade-zoom-in"
+          data-aos-duration="2000">
           <h1 class="hero-popular__title">Most Popular Tools</h1>
 
           <p class="hero-popular__description">
@@ -113,7 +129,11 @@
           <!-- list of popular tools cards  -->
           <ul class="popular__cards list">
             <!-- Figma -->
-            <li class="popular__card">
+            <li
+              class="popular__card"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="100">
               <a
                 class="popular__card-link link"
                 href="https://www.figma.com/"
@@ -152,7 +172,11 @@
             </li>
 
             <!-- Adobe XD -->
-            <li class="popular__card">
+            <li
+              class="popular__card"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="200">
               <a
                 class="popular__card-link link"
                 href="https://www.adobe.com/products/xd.html"
@@ -191,7 +215,11 @@
             </li>
 
             <!-- InVision -->
-            <li class="popular__card">
+            <li
+              class="popular__card"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="300">
               <a
                 class="popular__card-link link"
                 href="https://www.invisionapp.com/"
@@ -230,7 +258,11 @@
             </li>
 
             <!-- Github -->
-            <li class="popular__card">
+            <li
+              class="popular__card"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="400">
               <a
                 class="popular__card-link link"
                 href="https://github.com/"
@@ -270,7 +302,11 @@
             </li>
 
             <!-- VS Code -->
-            <li class="popular__card">
+            <li
+              class="popular__card"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="500">
               <a
                 class="popular__card-link link"
                 href="https://code.visualstudio.com/"
@@ -309,7 +345,11 @@
             </li>
 
             <!-- Sketch -->
-            <li class="popular__card">
+            <li
+              class="popular__card"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="600">
               <a
                 class="popular__card-link link"
                 href="https://www.sketch.com/"
@@ -349,7 +389,11 @@
             </li>
 
             <!-- PyCharm -->
-            <li class="popular__card">
+            <li
+              class="popular__card"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="700">
               <a
                 class="popular__card-link link"
                 href="https://www.jetbrains.com/pycharm/"
@@ -389,7 +433,11 @@
             </li>
 
             <!-- Maze -->
-            <li class="popular__card">
+            <li
+              class="popular__card"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="800">
               <a
                 class="popular__card-link link"
                 href="https://maze.co/"
@@ -430,7 +478,11 @@
             </li>
 
             <!-- Webflow -->
-            <li class="popular__card">
+            <li
+              class="popular__card"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="900">
               <a
                 class="popular__card-link link"
                 href="https://webflow.com/"
@@ -747,5 +799,14 @@
     <script src="./js/current-page.js" defer></script>
     <script src="./js/scroll-page.js" defer></script>
     <script src="./js/back-to-top.js" defer></script>
+
+    <!-- AOS animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // disabled on mobile and tablet
+        disable: () => window.innerWidth < 1200,
+      });
+    </script>
   </body>
 </html>

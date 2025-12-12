@@ -1,13 +1,10 @@
 # Gear Tools
 
-<div align="center">
+Catalog-style static website that curates popular and newcomer tools for
+designers and developers.
 
-**[🇺🇦 Українською](README_uk.md)** | **[English](README_en.md)**
-
-</div>
+**Choose your language to view the full documentation.**
 
 ---
 
-Catalog-style static website that curates popular and newcomer tools for designers and developers.
-
-**Choose your language above to view the full documentation.**
+**[🇺🇦 Українською](README_uk.md)** | **[English](README_en.md)**

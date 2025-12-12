@@ -47,7 +47,10 @@
     <link rel="stylesheet" href="./css/main.css" />
 
     <!-- AOS animate -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+      media="(min-width: 1200px)" />
   </head>
   <body>
     <!-- HEADER -->
@@ -555,13 +558,19 @@
     <script src="./js/scroll-page.js" defer></script>
     <script src="./js/back-to-top.js" defer></script>
 
-    <!-- AOS animate -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS animate - loaded only on desktop (>= 1200px) -->
     <script>
-      AOS.init({
-        // disabled on mobile and tablet
-        disable: () => window.innerWidth < 1200,
-      });
+      if (window.matchMedia('(min-width: 1200px)').matches) {
+        const aosScript = document.createElement('script');
+        aosScript.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
+        aosScript.defer = true;
+        aosScript.onload = () => {
+          AOS.init({
+            disable: () => window.innerWidth < 1200,
+          });
+        };
+        document.head.appendChild(aosScript);
+      }
     </script>
   </body>
 </html>

@@ -1,10 +1,6 @@
 # Gear Tools
 
-<div align="center">
-
-**[🇺🇦 Українською](README_uk.md)** | **English**
-
-</div>
+**English** | **[🇺🇦 Українською](README_uk.md)**
 
 ---
 
